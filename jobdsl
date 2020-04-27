@@ -1,9 +1,4 @@
 job('DSL-Tutorial-1-Test') {
-    environmentVariables {
-    script('''
-      source /etc/profile.d/maven.sh
-    ''')
-    }
     scm {
         git('git://github.com/suh209/aws-sdk-test.git') { node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('suh209')
